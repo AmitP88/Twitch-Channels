@@ -5,6 +5,10 @@ img {
     margin-left: 15%;
     margin-right: 10%;
   }
+
+  h1 {
+      text-align: center;
+  }
   
   li {
     display: flex;
@@ -20,3 +24,27 @@ img {
     padding-right: 10%;
     padding-left: 5%;
   }
+
+  .fa-github {
+    transform: rotate(-360deg);
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-github {
+    color: black;
+    margin-top: 15%;
+}
+
+.fa-github:hover {
+    color: #00CED1;
+}
+
+.github-profile-link {
+    color: blue;
+    text-decoration-line: none;
+}
+
+p {
+    text-align: center;
+}
