@@ -1,0 +1,22 @@
+img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-left: 15%;
+    margin-right: 10%;
+  }
+  
+  li {
+    display: flex;
+    margin-top: 5%;
+  }
+  
+  a {
+    padding-top: 4%;
+  }
+  
+  h3 {
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 5%;
+  }
