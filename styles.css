@@ -8,6 +8,13 @@ body {
 
 table {
     width: 100%;
+    background-color: aliceblue;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 3%;
+    border-bottom: 1px solid black;
 }
 
 .channel_name {
