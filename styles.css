@@ -1,5 +1,6 @@
 header {
     background-color: #4b307b;
+    border-bottom: 1px solid black;
 }
 
 body {
@@ -56,5 +57,5 @@ h1 {
 
 p {
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
