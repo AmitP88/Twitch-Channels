@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/brands.js" integrity="sha384-qJKAzpOXfvmSjzbmsEtlYziSrpVjh5ROPNqb8UZ60myWy7rjTObnarseSKotmJIx" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
   <script src="app.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media_queries.css">
   <title>Twitch.tv JSON API</title>
 </head>
 <body>
-    <header>
-        <img src="Twitch_Purple_RGB.png" alt="twitch.tv" class="twitch_logo">
-        <a href="https://fontmeme.com/fonts/dimitri-font/" class="font-link"><img src="https://fontmeme.com/permalink/180407/2c2c1b180320c960a55306e69fbcce36.png" alt="dimitri-font" border="0" class="channels"></a>        
-    </header>
-
-  <ul id="streamers"></ul>
+  <header>
+      <img src="Twitch_Purple_RGB.png" alt="twitch.tv" class="twitch_logo">
+      <h1>Channels</h1>      
+  </header>
+  <table class="channels" id="streamers"></table>
   <footer>
     <a href="https://github.com/AmitP88/Pomodoro-Timer" target="_blank">
       <i class="fab fa-github fa-4x"></i>

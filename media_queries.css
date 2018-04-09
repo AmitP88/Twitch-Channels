@@ -1,0 +1,32 @@
+@media only screen and (min-width: 320px) {
+    header {
+        display: flex;
+    }
+
+    .twitch_logo {
+        width: 45vw;
+        height: 50px;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    .channel_logo {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        font-style: italic;
+    }
+
+    td {
+        padding: 1%;
+        border-bottom: 1px solid black;
+    }
+
+}

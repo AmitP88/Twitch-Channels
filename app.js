@@ -10,18 +10,16 @@ $(document).ready(function() {
           // console.log(data);
           
           if (data.status === null) {
-             data.status = "offline"
+             data.status = "offline";
           }
-          
-          
+
           $("#streamers").append(
-            '<li>' + 
-              '<img src=' + "'" + data.logo + "'" + '/>' +
-              '<a href=' + data.url + ' ' + 'target=_blank' +'>' + data.display_name + '</a>' +
-              '<h3>' + data.status + '</h3>' +
-            '</li>'
+            '<tr>' + 
+              '<td>' + '<img src=' + "'" + data.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
+              '<td>' + '<a href=' + data.url + ' ' + 'target=_blank' + ' ' + 'class="channel_name"' + '>' + data.display_name + '</a>' + '</td>' +
+              '<td>' + '<h3>' + data.status + '</h3>' + '</td>' +
+            '</tr>'
           );
-  
         }
       });    
     }
