@@ -26,7 +26,7 @@ td {
 
 .twitch_logo {
     padding: 10px;
-    z-index: 2;
+    background-color: white;
 }
 
 h1 {

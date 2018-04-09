@@ -6,10 +6,12 @@
     .twitch_logo {
         width: 45vw;
         height: 50px;
+        margin-right: 2%;
     }
 
     h1 {
         font-size: 9vw;
+        margin-bottom: 1%;
     }
 
     .channel_logo {
@@ -42,10 +44,6 @@
 }
 
 @media only screen and (min-width: 425px) {
-    header {
-        padding-left: 2%;
-    }
-
     .twitch_logo {
         padding-top: 5%;
     }
