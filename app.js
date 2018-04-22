@@ -8,15 +8,21 @@ $(document).ready(function() {
         'dataType': 'json',
         'success': function(data) {
           // console.log(data);
+
+          var status_light;
           
           if (data.status === null) {
-             data.status = "offline";
+            data.status = "offline";
+            status_light = 'class="offline"';
+          } else {
+            status_light = 'class="online"';
           }
 
           $("#streamers").append(
             '<tr>' + 
               '<td>' + '<img src=' + "'" + data.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
               '<td>' + '<a href=' + data.url + ' ' + 'target=_blank' + ' ' + 'class="channel_name"' + '>' + data.display_name + '</a>' + '</td>' +
+              '<td>' + '<span ' + status_light + '>' + '</span>' + '</td>' +
               '<td>' + '<h3>' + data.status + '</h3>' + '</td>' +
             '</tr>'
           );
