@@ -19,12 +19,12 @@ h1 {
 }
 
 table {
-    width: 100%;
+    /* width: 100%; */
     background-color: aliceblue;
     border-collapse: collapse;
 }
 
-td {
+tr {
     border-bottom: 1px solid #202020;
 }
 
@@ -51,14 +51,10 @@ td {
 }
 
 .fa-github {
+    color:aliceblue;    
     transform: rotate(-360deg);
     margin-left: 50%;
-    margin-top: 30%;
     transform: translate(-50%, -50%);
-}
-
-.fa-github {
-    color:aliceblue;
 }
 
 .fa-github:hover {
