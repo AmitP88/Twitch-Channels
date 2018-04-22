@@ -14,6 +14,10 @@
         margin-bottom: 1%;
     }
 
+    td {
+        padding: 3%;
+    }
+
     .channel_logo {
         border-radius: 50%;
         width: 50px;
@@ -34,12 +38,17 @@
 }
 
 @media only screen and (min-width: 375px) {
+    .channel_logo {
+        width: 60px;
+        height: 60px;
+    }
+
     .channel_name {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     h3 {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
