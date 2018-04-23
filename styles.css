@@ -57,11 +57,11 @@ tr {
 }
 
 .fa-github:hover {
-    color: blue;
+    color: #4646fd;
 }
 
 .github-profile-link {
-    color: blue;
+    color: #4646fd;
     text-decoration-line: none;
 }
 
@@ -72,6 +72,6 @@ footer {
 p {
     text-align: center;
     padding-bottom: 10%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: aliceblue;
 }
