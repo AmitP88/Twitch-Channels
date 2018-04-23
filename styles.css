@@ -18,9 +18,12 @@ h1 {
     color: aliceblue;
 }
 
+.table-container {
+    overflow-x: auto;
+}
+
 table {
     /* width: 100%; */
-    background-color: aliceblue;
     border-collapse: collapse;
 }
 
@@ -35,19 +38,11 @@ tr {
 }
 
 .offline {
-    height: 10px;
-    width: 10px;
-    background-color: red;
-    border-radius: 50%;
-    display: inline-block;   
+    background-color: rgb(186, 220, 250);
 }
 
 .online {
-    height: 10px;
-    width: 10px;
-    background-color: #7CFC00;
-    border-radius: 50%;
-    display: inline-block;     
+    background-color: aliceblue;  
 }
 
 .fa-github {
