@@ -20,7 +20,7 @@ $(document).ready(function() {
 
           $("#streamers").append(
             '<tr ' + status_light + '>' +       
-              '<td>' + '<img src=' + "'" + data.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
+              '<td class="channel_logo_cell">' + '<img src=' + "'" + data.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
               '<td>' + '<a href=' + data.url + ' ' + 'target=_blank' + ' ' + 'class="channel_name"' + '>' + data.display_name + '</a>' + '</td>' +
               '<td>' + '<h3>' + data.status + '</h3>' + '</td>' +
             '</tr>'
