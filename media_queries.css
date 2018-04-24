@@ -92,6 +92,10 @@
         width: 30vw;
     }
 
+    .twitch-link {
+        padding-right: 10%;        
+    }
+
     h1 {
         font-size: 6vw;
         padding-left: 10%;
