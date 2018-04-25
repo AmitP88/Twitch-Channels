@@ -1,31 +1,52 @@
 $(document).ready(function() {
     var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
     
-    for(var i = 0; i < channels.length; i++) {
+    channels.forEach(function(channel){
       $.ajax({
-        'url' : 'https://wind-bow.gomix.me/twitch-api/channels/' + channels[i] + '?callback=?',
+        'url': 'https://wind-bow.glitch.me/twitch-api/streams/' + channel,
         'type': 'GET',
         'dataType': 'json',
-        'success': function(data) {
-          // console.log(data);
+        'success': function(stream_data) {
+          console.log(stream_data);
 
-          var status_light;
-          
-          if (data.status === null) {
-            data.status = "offline";
-            status_light = 'class="offline"';
+          var status_background;
+
+          if (stream_data.stream === null) {
+            // If channel is offline
+            status_background = 'class="offline"';
+            console.log(channel);            
+
+            $.ajax({
+              'url': 'https://wind-bow.glitch.me/twitch-api/channels/' + channel + '?callback=?',
+              'type': 'GET',
+              'dataType': 'json',
+              'success': function(offline_channel_data) {
+                console.log(offline_channel_data);
+
+                $("#streamers").append(
+                  '<tr ' + status_background + '>' +       
+                    '<td class="channel_logo_cell">' + '<img src=' + "'" + offline_channel_data.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
+                    '<td>' + '<a href=' + offline_channel_data.url + ' ' + 'target=_blank' + ' ' + 'class="channel_name"' + '>' + offline_channel_data.display_name + '</a>' + '</td>' +
+                    '<td>' + '<h3>' + 'Offline' + '</h3>' + '</td>' +
+                  '</tr>'
+                );
+              }
+            });              
+
           } else {
-            status_light = 'class="online"';
-          }
+            // If channel is currently streaming
+            status_background = 'class="online"';
 
-          $("#streamers").append(
-            '<tr ' + status_light + '>' +       
-              '<td class="channel_logo_cell">' + '<img src=' + "'" + data.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
-              '<td>' + '<a href=' + data.url + ' ' + 'target=_blank' + ' ' + 'class="channel_name"' + '>' + data.display_name + '</a>' + '</td>' +
-              '<td>' + '<h3>' + data.status + '</h3>' + '</td>' +
-            '</tr>'
-          );
+            $("#streamers").append(
+              '<tr ' + status_background + '>' +       
+                '<td class="channel_logo_cell">' + '<img src=' + "'" + stream_data.stream.channel.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
+                '<td>' + '<a href=' + stream_data.stream.channel.url + ' ' + 'target=_blank' + ' ' + 'class="channel_name"' + '>' + stream_data.stream.channel.display_name + '</a>' + '</td>' +
+                '<td>' + '<h3>' + stream_data.stream.stream_type + '</h3>' + '</td>' +
+              '</tr>'
+            );
+          }
+          
         }
-      });    
-    }
+      });
+    });
 });
