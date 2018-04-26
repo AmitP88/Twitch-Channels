@@ -43,6 +43,11 @@
         font-style: italic;
     }
 
+    .live-icon {
+        width: 20px;
+        height: 20px;    
+    }
+
     .fa-github {
         margin-top: 30%;
     }

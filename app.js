@@ -27,7 +27,7 @@ $(document).ready(function() {
                   '<tr ' + status_background + '>' +       
                     '<td class="channel_logo_cell">' + '<img src=' + "'" + offline_channel_data.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
                     '<td>' + '<h3 class="channel_name">' + offline_channel_data.display_name + '</h3>' + '</td>' +
-                    '<td>' + '<a href=' + offline_channel_data.url + ' ' + 'target=_blank' + '>' + "Offline" + '</a>' + '</td>' +
+                    '<td>' + '<a href=' + offline_channel_data.url + ' ' + 'target=_blank' + ' class="status"' + '>' + "Offline" + '</a>' + '</td>' +
                   '</tr>'
                 );
               }
@@ -41,7 +41,7 @@ $(document).ready(function() {
               '<tr ' + status_background + '>' +       
                 '<td class="channel_logo_cell">' + '<img src=' + "'" + stream_data.stream.channel.logo + "'" + 'class="channel_logo"' + '/>' + '</td>' +
                 '<td>' + '<h3 class="channel_name">' + stream_data.stream.channel.display_name + '</h3>' + '</td>' +
-                '<td>' + '<a href=' + stream_data.stream.channel.url + ' ' + 'target=_blank' + '>' + stream_data.stream.stream_type + '</a>' + ' - ' + stream_data.stream.channel.status +'</td>' +
+                '<td>'+ '<img class="live-icon" src="live.gif" alt="live" />' + '<a href=' + stream_data.stream.channel.url + ' ' + 'target=_blank' + ' class="status topic"' + '>' + ' ' + stream_data.stream.channel.status + '</a>' +'</td>' +
               '</tr>'
             );
           }

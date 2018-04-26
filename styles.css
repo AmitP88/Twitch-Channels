@@ -41,6 +41,16 @@ tr {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.status {
+    text-decoration-line: none;
+}
+
+.topic {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;    
+}
+
 .offline {
     background-color: rgb(186, 220, 250);
 }
