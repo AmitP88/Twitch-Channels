@@ -1,8 +1,4 @@
 @media only screen and (min-width: 320px) {
-    header {
-        display: flex;
-    }
-
     .twitch_logo {
         width: 40vw;
         margin-right: 2%;
@@ -13,7 +9,7 @@
         font-size: 8vw;
         margin-top: 7%;
         margin-bottom: 1%;
-        padding-left: 5%;
+        padding-left: 7%;
     }
 
     table {
@@ -25,22 +21,14 @@
     }
 
     .channel_logo {
-        border-radius: 50%;
         width: 50px;
         height: 50px;
         padding-left: 2%;
     }
 
     .channel_name {
-        font-size: 13px;
-        padding-left: 5%;
-    }
-
-    h3 {
-        font-size: 11px;
-        padding-left: 5%;
-        font-family: 'Ubuntu', sans-serif;
-        font-style: italic;
+        font-size: 14px;
+        text-align: left;    
     }
 
     .live-icon {
@@ -52,12 +40,9 @@
         display: block; 
     }
 
-    .topic {
+    .topic, .offline a {
         font-size: 12px;
-    }
-
-    .offline a {
-        font-size: 12px;
+        text-align: center;
     }
 
     .fa-github {
@@ -66,9 +51,23 @@
 }
 
 @media only screen and (min-width: 375px) {
+    .channel_name {
+        font-size: 15px;    
+    }
+
     .fa-github {
-        margin-top: 20%;
-    }    
+        margin-top: 25%;
+    }
+    
+    .topic, .offline a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    h3 {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 500px) {

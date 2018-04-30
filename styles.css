@@ -5,6 +5,7 @@ body {
 header {
     background-color: #4b307b;
     border-bottom: 1px solid #b6babd;
+    display: flex;
 }
 
 .twitch_logo {
@@ -36,10 +37,16 @@ tr {
     text-align: center;
 }
 
+.channel_logo {
+    border-radius: 50%;
+}
+
 .channel_name {
     text-decoration-line: none;
     color: darkblue;
     font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    padding-left: 5%;
 }
 
 .status {
