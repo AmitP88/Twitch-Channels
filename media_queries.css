@@ -65,8 +65,13 @@
 }
 
 @media only screen and (min-width: 425px) {
+    .channel_logo {
+        width: 60px;
+        height: 60px;
+    }
+
     h3 {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -104,17 +109,22 @@
 }
 
 @media only screen and (min-width: 600px) {
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .twitch_logo {
-        width: 30vw;
+        width: 30vw;  
     }
 
     .twitch-link {
-        padding-right: 10%;        
+        padding-right: 3%;        
     }
 
     h1 {
         font-size: 6vw;
-        padding-left: 10%;
+        padding-left: 5%;
     }
 
     .fa-github {
@@ -123,6 +133,15 @@
 }
 
 @media only screen and (min-width: 700px) {
+    body {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .twitch_logo {
+        width: 25vw;  
+    }
+
     h1 {
         margin-top: 4%;
     }
@@ -138,7 +157,7 @@
 
 @media only screen and (min-width: 768px) {
     .twitch_logo {
-        width: 25vw;
+        width: 20vw;
         padding-left: 25%;
     }
 
@@ -147,7 +166,7 @@
     }
 
     h1 {
-        font-size: 5vw;
+        font-size: 4.5vw;
         margin-top: 3.5%;
         padding-left: 10%;
     }
@@ -160,27 +179,30 @@
         padding: 2%;
     }
 
-    .channel_logo {
-        width: 80px;
-        height: 80px;
-    }
-
     .channel_name {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .twitch_logo {
-        width: 20vw;
+        width: 15vw;
         padding-left: 25%;
         padding-right: 15%;
     }
 
     h1 {
-        font-size: 4.5vw;
-        margin-top: 2.5%;
+        font-size: 3.5vw;
+        margin-top: 2%;
         padding-left: 8%;
+    }
+
+    .channel_logo_cell {
+        padding-left: 5%;
+    }
+
+    .channel_name {
+        text-align: center;
     }
 
     h3 {
@@ -193,6 +215,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+    body {
+        width: 60%;
+        margin: 0 auto;
+    }
     .twitch_logo {
         width: 15vw;
         padding-top: 7%;
@@ -200,17 +226,13 @@
     }
 
     h1 {
-        font-size: 3.5vw;
-        margin-top: 2.5%;
+        font-size: 3vw;
+        margin-top: 4%;
         padding-left: 8%;
     }
 
     .channel_name {
         font-size: 20px;
-    }
-
-    .channel_logo_cell {
-        padding-left: 8%;
     }
 
     td {
