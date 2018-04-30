@@ -162,7 +162,7 @@
     }
 
     .twitch-link {
-        padding-right: 10%;        
+        padding-right: 15%;        
     }
 
     h1 {
@@ -186,14 +186,14 @@
 
 @media only screen and (min-width: 1024px) {
     .twitch_logo {
-        width: 15vw;
-        padding-left: 25%;
+        width: 16vw;
+        padding-left: 35%;
         padding-right: 15%;
     }
 
     h1 {
-        font-size: 3.5vw;
-        margin-top: 2%;
+        font-size: 4vw;
+        margin-top: 2.5%;
         padding-left: 8%;
     }
 
