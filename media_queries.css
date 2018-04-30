@@ -44,8 +44,20 @@
     }
 
     .live-icon {
-        width: 20px;
-        height: 20px;    
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        border-radius: 5%;
+        display: block; 
+    }
+
+    .topic {
+        font-size: 12px;
+    }
+
+    .offline a {
+        font-size: 12px;
     }
 
     .fa-github {

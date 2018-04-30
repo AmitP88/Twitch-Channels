@@ -33,6 +33,7 @@ table {
 
 tr {
     border-bottom: 1px solid #b6babd;
+    text-align: center;
 }
 
 .channel_name {
@@ -46,13 +47,16 @@ tr {
 }
 
 .topic {
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;    
+    font-family: 'Open Sans', sans-serif;  
 }
 
 .offline {
     background-color: rgb(186, 220, 250);
+}
+
+.offline a {
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .online {
